@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ✍️ QuillPress — Multi-Author Blog Platform
 
 <div align="center">
@@ -379,3 +380,7 @@ Built with ❤️ using the MERN Stack
 **[⬆ Back to top](#️-quillpress--multi-author-blog-platform)**
 
 </div>
+=======
+# Multiple_Author_Blog
+This is a MERN Stack Multiple Author Blog website.
+>>>>>>> a0ed1b3e769cc1f243edbdda03a2ab3237309715
