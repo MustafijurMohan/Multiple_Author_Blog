@@ -1,6 +1,7 @@
 import { useState, useRef, useEffect, useContext } from "react";
 import { NavLink, useNavigate } from "react-router";
 import { AuthContext } from "../context/Auth";
+import logo from '../assets/images/logo.png'
 
 // ── Icons ─────────────────────────────────────────────────────────────────────
 
@@ -149,14 +150,14 @@ const Navbar = () => {
 
           {/* ── Logo ── */}
           <NavLink to="/" className="flex items-center gap-2.5 shrink-0 group">
-            {/* <img
-              src=""
-              alt=""
+            <img
+              src={logo}
+              alt="logo"
               className="w-8 h-8 object-contain transition-transform duration-300 group-hover:-rotate-6"
-            /> */}
-            <span className="font-playfair text-[19px] tracking-tight text-gray-900">
+            />
+            {/* <span className="font-playfair text-[19px] tracking-tight text-gray-900">
               Quill<span className="text-orange-600">Press</span>
-            </span>
+            </span> */}
           </NavLink>
 
           {/* ── Center nav (desktop) ── */}
@@ -271,10 +272,10 @@ const Navbar = () => {
                 className="flex items-center gap-2"
                 onClick={() => setMenuOpen(false)}
               >
-                {/* <img src="/logo.png" alt="logo" className="w-7 h-7 object-contain" /> */}
-                <span className="font-playfair text-[18px] text-gray-900">
+                <img src={logo} alt="logo" className="w-7 h-7 object-contain" />
+                {/* <span className="font-playfair text-[18px] text-gray-900">
                   Quill<span className="text-orange-600">Press</span>
-                </span>
+                </span> */}
               </NavLink>
               <button
                 onClick={() => setMenuOpen(false)}

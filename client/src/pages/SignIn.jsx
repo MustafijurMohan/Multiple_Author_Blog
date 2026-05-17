@@ -297,7 +297,7 @@ const SignIn = () => {
               </h1>
               <p className="mt-1 text-sm text-gray-400">
                 {mode === "signin"
-                  ? "Sign in to continue to QuillPress"
+                  ? "Sign in to continue to Blogging"
                   : "Join thousands of writers today"}
               </p>
             </div>

@@ -23,6 +23,7 @@ const LinkedInIcon = () => (
   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
     <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
     <circle cx="4" cy="4" r="2"/>
+    
   </svg>
 )
 const RssIcon = () => (
@@ -64,10 +65,10 @@ const footerLinks = [
 ]
 
 const socials = [
-  { icon: <TwitterIcon />,   href: '#', label: 'Twitter'   },
-  { icon: <GithubIcon />,    href: '#', label: 'GitHub'    },
-  { icon: <InstagramIcon />, href: '#', label: 'Instagram' },
-  { icon: <LinkedInIcon />,  href: '#', label: 'LinkedIn'  },
+  { icon: <TwitterIcon />,   href: 'https://x.com/home', label: 'Twitter'   },
+  { icon: <GithubIcon />,    href: 'https://github.com/MustafijurMohan', label: 'GitHub'    },
+  { icon: <InstagramIcon />, href: 'https://www.instagram.com/mustafijurmohan/', label: 'Instagram' },
+  { icon: <LinkedInIcon />,  href: 'https://www.linkedin.com/in/mustafijur-mohan-7a9958209/', label: 'LinkedIn'  },
   { icon: <RssIcon />,       href: '#', label: 'RSS Feed'  },
 ]
 
@@ -110,7 +111,7 @@ const Footer = () => {
         </div>
 
         {/* Main footer body */}
-        <div className="max-w-5xl mx-auto px-4 pt-14 pb-8">
+        <div className="max-w-6xl mx-auto px-4 pt-14 pb-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
 
             {/* Brand column */}
@@ -119,10 +120,11 @@ const Footer = () => {
                 <div className="w-8 h-8 bg-orange-600 rounded-lg flex items-center justify-center">
                   <img src={logo} alt="QuillPress" className="w-5 h-5 object-contain brightness-0 invert" />
                 </div>
-                <span className="font-playfair text-[18px] text-white">
-                  Quill<span className="text-orange-500">Press</span>
-                </span>
               </Link>
+                {/* <span className="font-playfair text-[18px] text-white">
+                  Quill<span className="text-orange-500">Press</span>
+                </span> */}
+              
               <p className="text-sm text-gray-500 leading-relaxed mb-5">
                 A home for writers who have something real to say. Distraction-free publishing for curious minds.
               </p>
@@ -150,8 +152,8 @@ const Footer = () => {
                 </h4>
                 <ul className="space-y-2.5">
                   {col.links.map(l => (
-                    <li key={l.label}>
-                      <Link to={l.to} className="footer-link text-sm text-gray-500 hover:text-orange-500">
+                    <li key={l.label} target='_blank' rel="noreferrer">
+                      <Link to={l.to}  className="footer-link text-sm text-gray-500 hover:text-orange-500">
                         {l.label}
                       </Link>
                     </li>
@@ -163,13 +165,13 @@ const Footer = () => {
 
           {/* Bottom bar */}
           <div className="border-t border-gray-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-            <span>© {year} QuillPress. All rights reserved.</span>
+            <span>© {year} All rights reserved.</span>
             <span className="flex items-center gap-1.5">
               Made with
               <svg width="12" height="12" viewBox="0 0 24 24" fill="#ea580c" stroke="none">
                 <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
               </svg>
-              by the QuillPress team
+              by the MustafijurMohan team
             </span>
           </div>
         </div>
