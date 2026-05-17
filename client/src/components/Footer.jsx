@@ -65,7 +65,7 @@ const footerLinks = [
 ]
 
 const socials = [
-  { icon: <TwitterIcon />,   href: 'https://x.com/home', label: 'Twitter'   },
+  { icon: <TwitterIcon />,   href: 'https://x.com/Mustafijur53047', label: 'Twitter'   },
   { icon: <GithubIcon />,    href: 'https://github.com/MustafijurMohan', label: 'GitHub'    },
   { icon: <InstagramIcon />, href: 'https://www.instagram.com/mustafijurmohan/', label: 'Instagram' },
   { icon: <LinkedInIcon />,  href: 'https://www.linkedin.com/in/mustafijur-mohan-7a9958209/', label: 'LinkedIn'  },
