@@ -3,7 +3,7 @@ import { useContext, useRef, useState } from 'react'
 import { useNavigate, Link } from 'react-router'
 import axios from 'axios'
 import { AuthContext } from '../context/Auth'
-import TipTapEditor from '../components/TipTapEditor'
+import TipTapEditor from '../components/TiptapEditor'
 
 const API_BASE = import.meta.env.VITE_BACKEND_URL
 
