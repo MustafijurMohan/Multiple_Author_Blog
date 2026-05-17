@@ -23,10 +23,11 @@ app.use(hpp())
 app.use(cors({
     origin: [
         "http://localhost:5173",
-		"http://localhost:3000"
+		"http://localhost:3000",
+        "https://multiple-author-blog-eacg.vercel.app",
     ],
     credentials: true,
-    allowedHeaders: ["Content-Type, Authorization, token"],
+    allowedHeaders: ["Content-Type", "Authorization", "token"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
 }))
 
